@@ -1,0 +1,36 @@
+{
+  "name": "sass-property-order",
+  "version": "0.2.1",
+  "description": "Sass property ordering tool",
+  "main": "./lib/sort-sass.js",
+  "bin": {
+    "sortsass": "./bin/sortsass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sat-sat/sass-property-order"
+  },
+  "keywords": [
+    "sass",
+    "sort"
+  ],
+  "author": "Satoru Yamamoto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sat-sat/sass-property-order/issues"
+  },
+  "homepage": "https://github.com/sat-sat/sass-property-order",
+  "preferGlobal": true,
+  "dependencies": {
+    "lodash": "^3.10.0"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "coffee-script": "^1.9.2",
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/coffee --no-header -bco lib src",
+    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register"
+  }
+}
